@@ -5,5 +5,8 @@ library(ggplot2)
 # Import the world_population.csv dataset
 world_population <- read.csv("world_population_data.csv")
 
-# Print world_population dataset
-print(world_population)
+# Filter the world_population dataset
+
+# Create a scatterplot using ggplot2
+print(ggplot(world_population, aes(x = continent, y = growth_rate)) +
+  geom_point())

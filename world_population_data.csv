@@ -1,4 +1,4 @@
-rank,cca3,country,continent,2023 population,2022 population,2020 population,2015 population,2010 population,2000 population,1990 population,1980 population,1970 population,area (km²),density (km²),growth rate,world percentage
+rank,cca3,country,continent,2023_population,2022_population,2020_population,2015_population,2010_population,2000_population,1990_population,1980_population,1970_population,area (km²),density (km²),growth_rate,world_percentage
 1,IND,India,Asia,1428627663,1417173173,1396387127,1322866505,1240613620,1059633675,870452165,696828385,557501301,3287590,481,0.81%,17.85%
 2,CHN,China,Asia,1425671352,1425887337,1424929781,1393715448,1348191368,1264099069,1153704252,982372466,822534450,9706961,151,-0.02%,17.81%
 3,USA,United States,North America,339996563,338289857,335942003,324607776,311182845,282398554,248083732,223140018,200328340,9372610,37,0.50%,4.25%
