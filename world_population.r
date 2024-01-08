@@ -26,12 +26,11 @@ top_population <- world_population %>%
 
 # Create a scatterplot using ggplot2
 print(ggplot() +
-  # geom_map(
-  #   data = world_coordinates, map = world_coordinates,
-  #   aes(long, lat, map_id = region), color = "green", fill = "lightyellow"
-  # ) +
-  geom_point(data = top_population, aes(
-    x = growth_rate, y = population_density,
-    color = population_density,
-    size = population_2023
-  )))
+  geom_map(
+    data = world_coordinates, map = world_coordinates,
+    aes(long, lat, map_id = region)
+  ))
+# geom_point(data = top_population, aes(
+#   color = population_density,
+#   size = population_2023
+# ))
