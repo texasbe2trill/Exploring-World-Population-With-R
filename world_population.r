@@ -7,7 +7,8 @@ library(tidyverse)
 world_population <- read.csv("world_population_data.csv")
 
 # Create data for world coordinates using map_data
-world_coordinates <- map_data("world")
+world_coordinates <- map_data("world") %>%
+  filter(region != "Antarctica")
 
 # Filter the world_population dataset
 top_population <- world_population %>%
@@ -29,8 +30,8 @@ print(ggplot() +
   geom_map(
     data = world_coordinates, map = world_coordinates,
     aes(long, lat, map_id = region)
+  )) +
+  geom_point(data = top_population, aes(
+    color = population_density,
+    size = population_2023
   ))
-# geom_point(data = top_population, aes(
-#   color = population_density,
-#   size = population_2023
-# ))
