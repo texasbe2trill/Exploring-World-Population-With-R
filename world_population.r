@@ -26,7 +26,7 @@ print(ggplot(world_map) +
 
         # Add labels to the plot
         labs(fill = "Growth %") +
-        ggtitle("Growth Rate by Region") +
+        ggtitle("Growth Rate by Country") +
 
         # Tweak display of theme
         theme_void())
