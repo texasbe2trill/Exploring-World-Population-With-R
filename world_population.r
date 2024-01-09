@@ -14,8 +14,7 @@ world_population <- world_population %>%
   )
 
 # Create data for world coordinates using map_data
-world_coordinates <- map_data("world") %>%
-  distinct(region)
+world_coordinates <- map_data("world")
 
 # Add simulated data and remove Antarctica
 world_map <- map_data("world") %>%
