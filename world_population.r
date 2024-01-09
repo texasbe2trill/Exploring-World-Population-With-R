@@ -1,4 +1,4 @@
-# Load the dplyr and ggplot2 libraries
+# Load the necessary libraries
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
@@ -15,19 +15,16 @@ world_population <- world_population %>%
 
 # Create data for world coordinates using map_data
 world_coordinates <- map_data("world") %>%
-  distinct(region) %>%
-  mutate(growth_rate_multiple = runif(n())) %>%
-  slice_sample(n = 200)
+  distinct(region)
 
 # Add simulated data and remove Antarctica
 world_map <- map_data("world") %>%
   filter(region != "Antarctica") %>%
-  cross_join(world_population)
-
+  left_join(world_population, by = c("region" = "country"))
 
 # Create a scatterplot using ggplot2
 print(ggplot(world_map) +
-  geom_polygon(aes(long, lat, group = group, fill = growth_rate_multiple)) +
+  geom_polygon(aes(long, lat, group = group, fill = growth_rate)) +
   coord_quickmap() +
-  scale_fill_viridis_c(option = "plasma", na.value = NA) +
+  scale_fill_viridis_c(option = "plasma") +
   theme_void())
