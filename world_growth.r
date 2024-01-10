@@ -54,5 +54,5 @@ print(ggplot(world_map) +
   # Tweak display of theme
   theme_map())
 
-# Save the plot as a PNG file
+# Save the plot as a file
 ggsave("world_plot.jpg", dpi = 300)
