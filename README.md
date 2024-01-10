@@ -4,13 +4,13 @@ In this project, I explore and analyze a world population dataset in the R progr
 Can you tell which countries in Africa have the highest growth?
 
 
-![Growth Rate By Country in R](world_plot.png)
+![Growth Rate By Country in R](world_plot.jpg)
 
 ## Context
 
 The world's population has undergone remarkable growth, exceeding 7.5 billion by mid-2019 and continuing to surge beyond previous estimates. Notably, China and India stand as the two most populous countries, with China's population potentially facing a decline while India's trajectory hints at surpassing it by 2030. This significant demographic shift is just one facet of a global landscape where countries like the United States, Indonesia, Brazil, Nigeria, and others, each with populations surpassing 100 million, play pivotal roles.
 
-![Growth Rate in Africa](africa_plot.png)
+![Growth Rate in Africa](africa_plot.jpg)
 
 The steady decrease in growth rates, though, is reshaping projections. While the world's population is expected to exceed 8 billion by 2030, growth will notably decelerate compared to previous decades. Specific countries like India, Nigeria, and several African nations will notably contribute to this growth, potentially doubling their populations before rates plateau.
 
