@@ -57,5 +57,5 @@ print(ggplot(africa_map) +
   # Tweak display of theme
   theme_map())
 
-# Save the plot as a PNG file
+# Save the plot as a file
 ggsave("africa_plot.jpg", dpi = 300)
