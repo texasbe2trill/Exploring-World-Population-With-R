@@ -50,8 +50,6 @@ This dataset (world_population_data.csv) covering from 1970 up to 2023 includes 
 
 ## Acknowledgement
 
-I retrieved this dataset via [Kaggle](https://www.kaggle.com/datasets/sazidthe1/world-population-data/data).
-
-Additional thanks to [Sazidul Islam](https://github.com/sazidthe1) who provided the dataset to Kaggle.
+Thanks to [Sazidul Islam](https://github.com/sazidthe1) who provided the dataset to [Kaggle](https://www.kaggle.com/datasets/sazidthe1/world-population-data/data).
 
 
