@@ -2,6 +2,7 @@
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
+library(ggthemes)
 
 # Import the world_population.csv dataset
 world_population <- read.csv("world_population_data.csv")
@@ -29,7 +30,7 @@ print(ggplot(world_map) +
         ggtitle("Growth Rate by Country") +
 
         # Tweak display of theme
-        theme_void())
+        theme_map())
 
 # Save the plot as a PNG file
-ggsave("plot.png", dpi = 300)
+ggsave("world_plot.png", dpi = 300)

@@ -3,6 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 library(ggrepel)
+library(ggthemes)
 
 # Import the world_population.csv dataset
 world_population <- read.csv("world_population_data.csv")
@@ -31,7 +32,7 @@ africa_map <- subset(world_coordinates, region %in% c(
 # Create label data for Africa
 label_data <- africa_map %>%
     group_by(region) %>%
-    filter(row_number() == 1)
+    filter(row_number() == 20)
 
 # Create a geom_polygon plot using ggplot2
 print(ggplot(africa_map) +
@@ -46,11 +47,11 @@ print(ggplot(africa_map) +
     # Use geom_label_repel for Africa labels
     geom_label_repel(
         data = label_data, aes(x = long, y = lat, label = region),
-        size = 3, max.overlaps = 12
+        size = 3
     ) +
 
     # Tweak display of theme
-    theme_void())
+    theme_map())
 
 # Save the plot as a PNG file
 ggsave("africa_plot.png", dpi = 300)
