@@ -27,7 +27,10 @@ label_data <- world_map %>%
   # Set North America long and lat to USA for display purposes
   mutate(
     long = ifelse(continent == "North America", -95, long),
-    lat = ifelse(continent == "North America", 37.5, lat)
+    lat = ifelse(continent == "North America", 37.5, lat),
+    long = ifelse(continent == "Oceania", 133.7751, long),
+    lat = ifelse(continent == "Oceania", -25.2744, lat),
+    continent = ifelse(continent == "Oceania", "Australia", continent)
   )
 
 # Create a geom_polygon plot using ggplot2
