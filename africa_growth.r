@@ -47,7 +47,7 @@ print(ggplot(africa_map) +
     # Use geom_label_repel for Africa labels
     geom_label_repel(
         data = label_data, aes(x = long, y = lat, label = region),
-        size = 7, max.overlaps = 12
+        size = 7, max.overlaps = 7
     ) +
 
     # Tweak display of theme
