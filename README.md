@@ -1,6 +1,8 @@
 # Exploring World Population With R
 Exploring and analyzing a world population dataset in the R programming language. The
-initial plot shows the growth rate by countries in the world. After conducting further analysis in R, African countries have the highest percentage of growth in world. I created a plot of African countries and their respective growth rates. Can you tell which countries in Africa have the highest growth?
+initial plot shows the growth rate by countries in the world. After conducting further analysis in R, African countries have some of the highest percentage of growth in world. I created a plot of African countries and their respective growth rates. 
+
+Can you tell which countries in Africa have the highest growth?
 
 
 ![Growth Rate By Country in R](plot.png)
