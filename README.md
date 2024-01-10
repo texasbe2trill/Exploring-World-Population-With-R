@@ -48,5 +48,10 @@ This dataset (world_population_data.csv) covering from 1970 up to 2023 includes 
 | `growth_rate` | Population Growth Rate by Country |
 | `world_percentage` | Population percentage by each Country |
 
+## Acknowledgement
+
+I retrieved this dataset via [Kaggle](https://www.kaggle.com/datasets/sazidthe1/world-population-data/data).
+
+Additional thanks to [Sazidul Islam](https://github.com/sazidthe1) who provided the dataset to Kaggle.
 
 
