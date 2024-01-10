@@ -23,8 +23,9 @@ world_map <- map_data("world") %>%
 # Create label data for World
 label_data <- world_map %>%
   group_by(continent) %>%
-  filter(row_number() == 25) %>%
+  filter(row_number() == 25, continent != "Antarctica") %>%
   # Set North America long and lat to USA for display purposes
+  # Set Australia coordinates and change Oceania label
   mutate(
     long = ifelse(continent == "North America", -95, long),
     lat = ifelse(continent == "North America", 37.5, lat),
