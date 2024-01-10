@@ -32,7 +32,7 @@ africa_map <- subset(world_coordinates, region %in% c(
 # Create label data for Africa
 label_data <- africa_map %>%
     group_by(region) %>%
-    filter(row_number() == 20)
+    filter(row_number() == 46)
 
 # Create a geom_polygon plot using ggplot2
 print(ggplot(africa_map) +
