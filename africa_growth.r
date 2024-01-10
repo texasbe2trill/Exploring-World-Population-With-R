@@ -32,7 +32,7 @@ africa_map <- subset(world_coordinates, region %in% c(
 # Create label data for Africa
 label_data <- africa_map %>%
     group_by(region) %>%
-    filter(row_number() == 46)
+    filter(row_number() == 50)
 
 # Create a geom_polygon plot using ggplot2
 print(ggplot(africa_map) +
@@ -47,7 +47,7 @@ print(ggplot(africa_map) +
     # Use geom_label_repel for Africa labels
     geom_label_repel(
         data = label_data, aes(x = long, y = lat, label = region),
-        size = 3
+        size = 7, max.overlaps = 12
     ) +
 
     # Tweak display of theme
