@@ -38,6 +38,7 @@ label_data <- africa_map %>%
   group_by(region) %>%
   filter(row_number() == 2) %>%
   mutate(
+    region = ifelse(region == "Democratic Republic of the Congo", "DRC", region),
     long = ifelse(region == "Algeria", 2.6322, long),
     lat = ifelse(region == "Algeria", 28.1636, lat),
     long = ifelse(region == "Angola", 17.8739, long),
@@ -60,8 +61,8 @@ label_data <- africa_map %>%
     lat = ifelse(region == "Chad", 15.4542, lat),
     long = ifelse(region == "Comoros", 43.8726, long),
     lat = ifelse(region == "Comoros", -11.8776, lat),
-    long = ifelse(region == "Republic of the Congo", 15.8277, long),
-    lat = ifelse(region == "Republic of the Congo", -0.2280, lat),
+    long = ifelse(region == "DRC", 15.8277, long),
+    lat = ifelse(region == "DRC", -0.2280, lat),
     long = ifelse(region == "Djibouti", 42.5903, long),
     lat = ifelse(region == "Djibouti", 11.8251, lat),
     long = ifelse(region == "Egypt", 31.2357, long),
@@ -165,7 +166,7 @@ print(ggplot(africa_map) +
   # Use geom_label_repel for Africa labels
   geom_label_repel(
     data = label_data, aes(x = long, y = lat, label = region),
-    size = 7, max.overlaps = 5
+    size = 7, max.overlaps = 7
   ) +
 
   # Use map theme from ggthemes library
