@@ -29,6 +29,8 @@ label_data <- world_map %>%
   mutate(
     long = ifelse(continent == "North America", -120.7401, long),
     lat = ifelse(continent == "North America", 47.7511, lat),
+    long = ifelse(continent == "South America", -71.9675, long),
+    lat = ifelse(continent == "South America", -13.5319, lat),
     long = ifelse(continent == "Africa", 7.4951, long),
     lat = ifelse(continent == "Africa", 9.0579, lat),
     long = ifelse(continent == "Europe", 25.2822, long),
@@ -57,7 +59,7 @@ print(ggplot(world_map) +
     box.padding = .5, point.padding = .5
   ) +
 
-  # Tweak display of theme
+  # Uses map theme from ggthemes library
   theme_map())
 
 # Save the plot as a file
