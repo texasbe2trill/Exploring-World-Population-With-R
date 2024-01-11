@@ -1,5 +1,5 @@
 # Exploring World Population With R
-In this project, I explore and analyze a world population dataset in the R programming language. Utilizing dplyr, tidyverse, and ggplot2, I created two choropleth maps with one map showing the growth rate of countries in the world; the other showing the growth rate of countries in Africa.
+In this project, I explore and analyze a world population dataset in the R programming language. Utilizing dplyr, tidyverse, and ggplot2, I created two choropleth maps with one map showing the growth rate of continents in the world; the other showing the growth rate of countries in Africa.
 
 ![Growth Rate By Continent in R](world_plot.jpg)
 
