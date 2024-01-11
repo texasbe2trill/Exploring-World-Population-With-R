@@ -4,7 +4,7 @@ In this project, I explore and analyze a world population dataset in the R progr
 Can you tell which countries in Africa have the highest growth?
 
 
-![Growth Rate By Country in R](world_plot.jpg)
+![Growth Rate By Continent in R](world_plot.jpg)
 
 ## Context
 
