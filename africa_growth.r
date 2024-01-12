@@ -36,7 +36,7 @@ africa_map <- subset(world_coordinates, region %in% c(
 # Create label data for Africa
 label_data <- africa_map %>%
   group_by(region) %>%
-  filter(row_number() == 2) %>%
+  filter(row_number() == 1) %>%
   mutate(
     region = ifelse(region == "Democratic Republic of the Congo", "DRC", region),
     region = ifelse(region == "Central African Republic", "CAR", region),
@@ -175,4 +175,4 @@ print(ggplot(africa_map) +
   theme_map())
 
 # Save the plot as a file
-ggsave("africa_plot.png", dpi = 300)
+ggsave("africa_plot.jpg", dpi = 600)
