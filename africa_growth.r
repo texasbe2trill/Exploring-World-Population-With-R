@@ -161,7 +161,7 @@ print(ggplot(africa_map) +
 
   # Add labels to the plot
   labs(fill = "Growth %") +
-  ggtitle("Growth Rate In Africa") +
+  ggtitle("Growth Rate In Africa (2023)") +
 
   # Use geom_label_repel for Africa labels
   geom_label_repel(

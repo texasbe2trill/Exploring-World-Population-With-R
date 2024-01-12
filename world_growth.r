@@ -50,7 +50,7 @@ print(ggplot(world_map) +
 
   # Add labels to the plot
   labs(fill = "Growth %") +
-  ggtitle("Growth Rate by Continent") +
+  ggtitle("Growth Rate by Continent (2023)") +
 
   # Use geom_label_repel for continent labels
   geom_label_repel(
