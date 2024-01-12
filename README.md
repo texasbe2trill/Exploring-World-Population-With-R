@@ -11,7 +11,7 @@ The steady decrease in growth rates, though, is reshaping projections. While the
 
 Can you tell which countries in Africa have the highest growth?
 
-![Growth Rate in Africa | Choropleth](africa_map.png)
+![Growth Rate in Africa | Choropleth](africa_plot.png)
 
 ## Content
 
