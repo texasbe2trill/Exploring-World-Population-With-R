@@ -39,6 +39,7 @@ label_data <- africa_map %>%
   filter(row_number() == 2) %>%
   mutate(
     region = ifelse(region == "Democratic Republic of the Congo", "DRC", region),
+    region = ifelse(region == "Central African Republic", "CAR", region),
     long = ifelse(region == "Algeria", 2.6322, long),
     lat = ifelse(region == "Algeria", 28.1636, lat),
     long = ifelse(region == "Angola", 17.8739, long),
@@ -55,8 +56,8 @@ label_data <- africa_map %>%
     lat = ifelse(region == "Cabo Verde", 15.9552, lat),
     long = ifelse(region == "Cameroon", 12.2776, long),
     lat = ifelse(region == "Cameroon", 5.9631, lat),
-    long = ifelse(region == "Central African Republic", 20.9394, long),
-    lat = ifelse(region == "Central African Republic", 6.6111, lat),
+    long = ifelse(region == "CAR", 20.9394, long),
+    lat = ifelse(region == "CAR", 6.6111, lat),
     long = ifelse(region == "Chad", 18.7322, long),
     lat = ifelse(region == "Chad", 15.4542, lat),
     long = ifelse(region == "Comoros", 43.8726, long),
@@ -174,4 +175,4 @@ print(ggplot(africa_map) +
   theme_map())
 
 # Save the plot as a file
-ggsave("africa_plot.jpg", dpi = 300)
+ggsave("africa_plot.png", dpi = 300)
