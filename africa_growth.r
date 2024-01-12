@@ -134,7 +134,7 @@ label_data <- africa_map %>%
     lat = ifelse(region == "South Africa", -29.0000, lat),
     long = ifelse(region == "South Sudan", 31.3872, long),
     lat = ifelse(region == "South Sudan", 6.8770, lat),
-    long = ifelse(region == "Sudan", 30.8025, long),
+    long = ifelse(region == "Sudan", 30.2176, long),
     lat = ifelse(region == "Sudan", 12.8628, lat),
     long = ifelse(region == "Tanzania", 34.8888, long),
     lat = ifelse(region == "Tanzania", -6.369028, lat),
