@@ -152,8 +152,6 @@ label_data <- africa_map %>%
     lat = ifelse(region == "Zimbabwe", -19.0154, lat)
   )
 
-
-
 # Create a geom_polygon plot using ggplot2
 print(ggplot(africa_map) +
   geom_polygon(aes(long, lat, group = group, fill = growth_rate)) +
